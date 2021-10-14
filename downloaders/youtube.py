@@ -7,7 +7,7 @@ from youtube_dl import YoutubeDL
 from config import BOT_USERNAME as bn, DURATION_LIMIT
 from helpers.errors import DurationLimitError
 ydl_opts = {
-    "format": "bestaudio/best",
+    "format": "bestaudio[ext=m4a]",
     "verbose": True,
     "geo-bypass": True,
     "nocheckcertificate": True,
